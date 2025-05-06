@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: service-provider
+  main:
+    allow-circular-references: true
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8858 # Sentinel Dashboard 地址

@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: service-consumer
+  main:
+    allow-circular-references: true
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8858 # Sentinel Dashboard 地址
+    loadbalancer:
+      ribbon:
+        enabled: false # 禁用 Ribbon，使用 Spring Cloud LoadBalancer
