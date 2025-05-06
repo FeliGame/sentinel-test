@@ -1,6 +1,4 @@
-# Spring Cloud 微服务架构示例
-
-本项目是一个基于 Spring Cloud 和 Sentinel 的微服务架构示例，包含服务的限流、熔断、降级和流量分隔。
+# 基于微服务架构的服务治理示例
 
 ## 项目结构
 - `service-provider`：服务提供者，提供 `/hello` 接口。
@@ -10,7 +8,7 @@
 - Java 1.8+
 - Maven
 - Sentinel Dashboard（Docker 容器，开放dashboard所在的8858端口以供服务注册）
-- JMeter 执行并发测试脚本
+- JMeter 执行并发请求测试脚本 (.jmx)
 
 ## 运行步骤
 1. **启动 Sentinel Dashboard**：确保你已经启动了 Sentinel Dashboard 的 Docker 容器。
